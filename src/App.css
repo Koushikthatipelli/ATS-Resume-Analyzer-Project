@@ -1,0 +1,171 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #0d1117;
+  color: #f0f6fc;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.app {
+  min-height: 100vh;
+}
+
+.navbar {
+  border-bottom: 1px solid #30363d;
+  padding: 18px 40px;
+}
+
+.logo {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  font-size: 22px;
+  font-weight: bold;
+}
+
+.hero {
+  text-align: center;
+  padding: 60px 20px;
+}
+
+.hero h1 {
+  font-size: 52px;
+  margin-bottom: 15px;
+}
+
+.hero p {
+  color: #8b949e;
+  max-width: 700px;
+  margin: auto;
+}
+
+.input-section {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
+  gap: 20px;
+  padding: 20px 40px;
+}
+
+.card {
+  background: #161b22;
+  border: 1px solid #30363d;
+  border-radius: 16px;
+  padding: 20px;
+}
+
+.card h3,
+.card h2 {
+  margin-bottom: 15px;
+}
+
+textarea {
+  width: 100%;
+  background: #0d1117;
+  color: white;
+  border: 1px solid #30363d;
+  border-radius: 10px;
+  padding: 15px;
+  resize: none;
+}
+
+.btn-container {
+  text-align: center;
+  margin: 30px 0;
+}
+
+button {
+  background: #238636;
+  color: white;
+  border: none;
+  padding: 14px 30px;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+button:hover {
+  opacity: 0.9;
+}
+
+.results {
+  padding: 20px 40px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+}
+
+.score-card,
+.stats-card {
+  background: #161b22;
+  border: 1px solid #30363d;
+  border-radius: 16px;
+  padding: 25px;
+  text-align: center;
+}
+
+.circle {
+  width: 120px;
+  height: 120px;
+  border: 8px solid #238636;
+  border-radius: 50%;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.circle span {
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.success-icon {
+  color: #238636;
+  font-size: 28px;
+}
+
+.danger-icon {
+  color: #da3633;
+  font-size: 28px;
+}
+
+.analysis-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 20px;
+  padding: 20px 40px;
+}
+
+.analysis-grid ul,
+.suggestions ul {
+  list-style: none;
+}
+
+.analysis-grid li,
+.suggestions li {
+  margin: 10px 0;
+}
+
+.suggestions {
+  margin: 20px 40px;
+}
+
+footer {
+  text-align: center;
+  color: #8b949e;
+  padding: 40px;
+}
+
+@media (max-width: 768px) {
+  .hero h1 {
+    font-size: 36px;
+  }
+
+  .input-section {
+    grid-template-columns: 1fr;
+  }
+}
